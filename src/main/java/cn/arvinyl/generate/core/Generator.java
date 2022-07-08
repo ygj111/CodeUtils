@@ -64,6 +64,7 @@ public class Generator {
         //4.模版处理(文件生成)
         FileWriter fw = new FileWriter(mkFile);
         template.process(dataModel , fw);
+        fw.close();
     }
 
 
